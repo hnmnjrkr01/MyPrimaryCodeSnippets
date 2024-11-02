@@ -1,0 +1,51 @@
+
+
+POST
+
+http://localhost:8080/ayurvedaStore/addCustomer
+
+body-->raw
+{
+ "cutomerId":1,
+ "customerName":"Heena Manjrekar",
+  "mobileNumber":"0789654132",
+ "email":"hn.mnjrkr01@gmail.com",
+ "password":"abcdef"
+}
+
+{
+ "cutomerId":2,
+ "customerName":"Gaurav Kekre",
+  "mobileNumber":"789465130",
+ "email":"kekre.gaurav@gmail.com",
+ "password":"qwert"
+}
+
+{
+ "cutomerId":3,
+ "customerName":"Shree Dheshmukh",
+  "mobileNumber":"7410852963",
+ "email":"Shree@gmail.com",
+ "password":"abcdef"
+}
+
+{
+ "cutomerId":4,
+ "customerName":"Shreadha Kelkar",
+  "mobileNumber":"8527410963",
+ "email":"Shradha@gmail.com",
+ "password":"iopjkl"
+}
+
+{
+ "cutomerId":5,
+ "customerName":"Vihaan Kekre",
+  "mobileNumber":"0789654132",
+ "email":"vhn.kkr22@gmail.com",
+ "password":"dasdasd"
+}
+
+
+GET-->
+
+http://localhost:8080/ayurvedaStore/viewAllCustomer

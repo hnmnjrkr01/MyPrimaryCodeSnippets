@@ -1,0 +1,72 @@
+
+POST
+http://localhost:8080/ayurvedaStore/addMedicine
+
+body-->raw
+
+{
+ "medicineId":1,
+ "medicineName":"Ashwagandha",
+ "medicineCost":45.55,
+ "mfg":"2019-12-12",
+ "expiryDate":"2023-06-01 ",
+ "company":"Dabur" 
+}
+
+	{
+	 "medicineId":2,
+	 "medicineName":"Curcumin Tablets",
+	 "medicineCost":78.23,
+	 "mfg":"2023-11-01",
+	 "expiryDate":"2029-06-01 ",
+	" company":"Himalayan" 
+	}
+
+----------------------------------------------MySQL------------------------------------------------------------------
+
+mysql> update medicine set fk_medicine_category_id = 11 where medicine_id = 9;
+
+mysql> update medicine set fk_medicine_category_id = 12 where medicine_id = 10;
+
+mysql> update medicine set fk_medicine_category_id = 13 where medicine_id = 11;
+
+mysql> update medicine set fk_medicine_category_id = 14 where medicine_id = 12;
+
+mysql> update medicine set fk_medicine_category_id = 15 where medicine_id = 13;
+
+mysql> update medicine set fk_medicine_category_id = 16 where medicine_id = 14;
+
+---------------------------------------------------------------------------------------------------------------------
+
+GET
+http://localhost:8080/ayurvedaStore/showAllMedicine
+
+PUT
+http://localhost:8080/ayurvedaStore/updateMedicine
+
+{
+ "medicineId":2,
+ "medicineName":"Haldi Tablets",
+ "medicineCost":78.23,
+ "mfg":"2023-11-01",
+ "expiryDate":"2029-06-01 ",
+"company":"Himalayan" 
+}
+
+{
+    "medicineId": 27,
+    "medicineName": "Jeera Tablets",
+    "medicineCost": 78.23,
+    "mfg": "2022-11-01",
+    "expiryDate": "2029-08-01",
+    "company": null
+}
+
+GET
+http://localhost:8080/ayurvedaStore/viewMedicine/1
+
+DELETE
+http://localhost:8080/ayurvedaStore/deleteMedicine/4
+
+GET -----------------------------------Not Working---------------------------------------
+http://localhost:8080/ayurvedaStore/availableQuantity/Adyusol

@@ -1,0 +1,48 @@
+MySQL
+
+
+
+
+
+mysql> 
+insert into product_masters values(10,'i7','HP',55000);
+insert into product_masters values(20,'i7','DELL',60000);
+commit;
+
+Postman :
+get:
+http://localhost:9092/find/20
+
+
+
+ UPDate :
+ 
+// Postman :PUT :   body  ram
+http://localhost:9092/update        
+
+	{
+	    "pid": 10,
+	    "pname": "Lenovo",
+	    "price": 50000.0,
+	    "mno": "Ryzen7"
+	}
+	
+
+Post Man :
+
+http://localhost:9092/find/20
+
+update
+http://localhost:9092/update
+body :
+    {
+    "pid": 10,
+    "pname": "HP",
+    "price": 50000.0,
+    "mno": "i5"
+}
+
+
+
+
+

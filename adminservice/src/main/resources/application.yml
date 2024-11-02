@@ -1,0 +1,15 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+    
+server:
+  port: 7091
+  
+spring:
+  application:
+    name: ADMIN-SERVICE

@@ -1,0 +1,53 @@
+
+
+
+POST
+
+http://localhost:8080/ayurvedaStore/addCart
+
+body-->raw
+
+{
+     "cartId": 1,
+	 "cost":50.55,
+     "quantity":2,
+     "customer":
+     {
+		 "cutomerId":1,
+		 "customerName":"Heena Manjrekar",
+		  "mobileNumber":"0789654132",
+		 "email":"hn.mnjrkr01@gmail.com",
+		 "password":"abcdef"
+		},
+	 "medicine":
+	 {
+		 "medicineId":1,
+		 "medicineName":"Ashwagandha",
+		 "medicineCost":45.55,
+		 "mfg":"2019-12-12",
+		 "expiryDate":"2023-06-01 ",
+		 "company":"Dabur" 
+	}
+}
+{
+     "cartId": 2,
+	 "cost":59.89,
+     "quantity":5,
+     "customer":
+     {
+      "cutomerId":2,
+ 		"customerName":"Gaurav Kekre",
+  		"mobileNumber":"789465130",
+ 		"email":"kekre.gaurav@gmail.com",
+ 		"password":"qwert"
+     }
+}
+
+
+
+
+
+
+
+GET
+http://localhost:8080/ayurvedaStore/showAll

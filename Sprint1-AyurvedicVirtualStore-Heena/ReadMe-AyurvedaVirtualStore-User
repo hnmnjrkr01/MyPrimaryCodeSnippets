@@ -1,0 +1,30 @@
+
+POST
+
+http://localhost:8080/ayurvedaStore/addUser
+
+body-->raw
+{
+     "userId" : 1,
+	 "userName" :"Ram",
+	 "password" :"asdfc",
+	 "role" :"admin"
+}
+{
+     "userId" : 2,
+	 "userName" :"Raju",
+	 "password" :"rerre",
+	 "role" :"Technitian"
+}
+{
+     "userId" : 4,
+	 "userName" :"Atharva",
+	 "password" :"uouioi",
+	 "role" :"Manufacturer Representative"
+}
+
+
+
+
+GET
+http://localhost:8080/ayurvedaStore/getAllUserInfo

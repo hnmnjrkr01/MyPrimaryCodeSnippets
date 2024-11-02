@@ -1,0 +1,43 @@
+MySQL
+Db Records :
+ create database springDB;
+ use springDB;
+ 
+ 
+
+
+
+Post : Add records 
+http://localhost:9999/contacts/create
+{
+	   "ID" : 1,
+        "Name" : "Heena Manjrekar",
+        "email" : "hn.mnjrkr01@gmail.com",
+        "mobileNumber" : 9712587620
+    }
+
+  {
+	   "ID" : 2,
+        "Name" : "Neha Pagnis",
+        "email" : "nh.pgns@gmail.com",
+        "mobileNumber" : 1234657890
+    }
+  {
+	   "ID" : 3,
+        "Name" : "Vibhore Manjrekar",
+        "email" : "vibgyore@gmail.com",
+        "mobileNumber" : 7896543210
+    }
+  {
+	   "ID" : 4,
+        "Name" : "Gaurav Kekre",
+        "email" : "kekre.gaurav@gmail.com",
+        "mobileNumber" : 3698521470
+    }
+  {
+	   "ID" : 5,
+        "Name" : "Sushil Kekre",
+        "email" : "kekre.sushil@gmail.com",
+        "mobileNumber" : 7412589630
+    }
+  

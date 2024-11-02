@@ -1,0 +1,13 @@
+Capgemini Anand Team 
+
+mysql> create database aayurvedadb;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use aayurvedadb;
+Database changed
+mysql>
+
+
+
+/api/v1/user
+

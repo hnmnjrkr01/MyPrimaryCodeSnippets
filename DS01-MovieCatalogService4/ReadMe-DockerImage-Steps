@@ -1,0 +1,67 @@
+http://localhost:9093/cato/list
+
+
+Docker Image Creation ......
+#1. Changes in pom.xml
+------- pom.xml file .. packaging as jar to be added	
+	<groupId>com.example</groupId>
+	<packaging>jar</packaging>   // to be added for docker
+	<artifactId>accounts</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>accounts</name>
+	
+	<properties>
+		<java.version>1.8</java.version>  // change the java version 1.8/11
+	</properties>
+	
+-----------------------------------------------------
+
+
+
+2. go to location 
+
+	1.1   C:\DS01-MovieCatalogService4> and make target folder empty
+	1.2   C:\DS01-MovieCatalogService4>mvn clean install
+	
+	Check the build success and target folder - related jar is created
+
+
+	 
+3. create the Dockerfile under accounts folder
+	C:\DS01-MovieCatalogService4>  - add Dockerfile without extension.
+	
+4. check the existing docker images first - docker images
+ C:\DS01-MovieCatalogService4>docker images
+
+
+5. create the docker image for account with below command
+                 goto DocuerHub =>  https://hub.docker.com
+                 : create account then you will get dvinat0230
+                 
+      c:\DS01-MovieCatalogService4>docker images
+                 
+#5. 
+	C:\DS01-MovieCatalogService4>docker build . -t dvinat0230/mymoviekani4
+
+6. check the image created - docker images
+
+7. Check any docker containers running - docker ps
+
+8. create container for the image created above
+	C:\DS01-MovieCatalogService2>docker run -p 9093:9093 dvinat0230/mymoviekani4
+	
+9. Check the application from postman
+ 
+http://localhost:9093/cato/list
+  
+		
+	
+	
+10. Pushing docker image to docker hub
+
+	1. Goto DockerHub.com and create account
+	2. commande - docker push docker.io/<docker-account>/<image-name>
+	
+		Ex: C:\DS01-MovieCatalogService2>docker push docker.io/dvinat0230/movieservice2
+
+

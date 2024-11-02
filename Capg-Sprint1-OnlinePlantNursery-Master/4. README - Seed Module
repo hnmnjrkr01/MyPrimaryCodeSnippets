@@ -1,0 +1,47 @@
+------------------------------------POST----------------------------------------------
+1. Add Seed : Method "POST"
+2. URL: http://localhost:9092/seeds/addSeeds
+3. INPUT: 
+   {
+    "name" : "Guava",
+    "bloomTime": "Winter",
+    "watering": "Yes",
+    "difficultyLevel": "Low",
+    "temprature": "Low",
+    "typeOfSeed": "Fruit",
+    "seedsDescription": "Guava seed",
+    "seedsStock": 100,
+    "seedsCost": 50.00,
+    "seedsPerPacket" : 20
+	}
+	
+------------------------------------GET----------------------------------------------
+1. Get Seed By Id : Method "GET"
+2. URL: http://localhost:9092/seeds/seeds/id/0
+
+1. Get All Seeds : Method "GET"
+2. URL: http://localhost:9092/seeds/getSeeds
+
+------------------------------------UPDATE----------------------------------------------
+
+1. Update Seed : Method "PUT"
+2. URL: http://localhost:9092/seeds/seeds/id/8
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+    "name" : "Guava",
+    "bloomTime": "Winter",
+    "watering": "Yes",
+    "difficultyLevel": "Low",
+    "temprature": "Low",
+    "typeOfSeed": "Fruit",
+    "seedsDescription": "Guava seed",
+    "seedsStock": 100,
+    "seedsCost": 120.00,
+    "seedsPerPacket" : 60
+	}
+	
+------------------------------------DELETE----------------------------------------------
+1. Delete Seed : Method "DELETE"
+2. URL:	http://localhost:9092/seeds/seeds/id/8
+

@@ -1,0 +1,50 @@
+------------------------------------POST----------------------------------------------
+1. Add Plant : Method "POST"
+2. URL: http://localhost:9092/plants/addPlant
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+    "plantHeight" : 40,
+    "plantSpread": "Yes",
+    "name": "Sunflower",
+    "bloomTime": "Summer",
+    "medicinalOrCulinaryUse": "No",
+    "difficultyLevel": "High",
+    "temprature": "Low",
+    "typeOfPlant": "Flower",
+    "plantDescription": "Sunflower Plant",
+    "plantsStock": 100,
+    "plantCost": 50.00
+	}
+	
+------------------------------------GET----------------------------------------------
+1. Get Plant By Id : Method "GET"
+2. URL: http://localhost:9092/plants/viewPlant/id/1
+
+1. Get All Plants : Method "GET"
+2. URL: http://localhost:9092/plants/viewAllPlants	
+
+------------------------------------UPDATE----------------------------------------------
+
+1. Update Plant : Method "PUT"
+2. URL: http://localhost:9092/plants/updatePlant/id/7
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+    "plantHeight" : 40,
+    "plantSpread": "Yes",
+    "name": "Cactus",
+    "bloomTime": "Winter",
+    "medicinalOrCulinaryUse": "Yes",
+    "difficultyLevel": "Medium",
+    "temprature": "Low",
+    "typeOfPlant": "Flower",
+    "plantDescription": "Sunflower Plant",
+    "plantsStock": 100,
+    "plantCost": 50.00
+	}
+	
+------------------------------------DELETE----------------------------------------------
+1. Delete Plant : Method "DELETE"
+2. URL:	http://localhost:9092/plants/deletePlant/id/7
+	

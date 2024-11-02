@@ -1,0 +1,42 @@
+POST
+
+http://localhost:8080/ayurvedaStore/addOrder
+
+body-->raw
+
+
+{
+"orderId": 1,
+"cost": 45.55,
+"dispatchDate" : "2020-03-10",
+"orderDate": "2020-03-02",
+"totalCost": 56.9,
+"status": "In-Transit"
+}
+
+GET
+http://localhost:8080/ayurvedaStore/showAllOrder
+
+GET
+http://localhost:8080/ayurvedaStore/showOrder/5
+
+PUT
+http://localhost:8080/ayurvedaStore/updateOrder
+
+{
+"orderId": 23,
+"cost": 45.55,
+"dispatchDate" : "2020-03-10",
+"orderDate": "2020-03-02",
+"totalCost": 56.9,
+"status": "Lost-But-Found"
+}
+
+PUT 						
+http://localhost:8080/ayurvedaStore/updateOrderStatus/3/"Delivered"
+
+DELETE
+http://localhost:8080/ayurvedaStore/cancelOrder/28
+
+GET-- Not Working
+http://localhost:8080/ayurvedaStore/totalCost/44.4

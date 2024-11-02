@@ -1,0 +1,38 @@
+------------------------------------POST----------------------------------------------
+1. Add Order : Method "POST"
+2. URL: http://localhost:9092/Orders/addOrder
+3. INPUT: 
+   {
+    "bookingId" :1001,
+	"orderDate" : "2022-08-20",
+	"transactionMode" : "Cash",
+	"quantity" : 40,
+	"price" : 800.00
+	}
+	
+------------------------------------GET----------------------------------------------
+1. Get Order By Id : Method "GET"
+2. URL: http://localhost:9092/Orders/viewOrder/id/3
+
+1. Get All Orders : Method "GET"
+2. URL: http://localhost:9092/Orders/getAllOrders
+
+------------------------------------UPDATE----------------------------------------------
+
+1. Update Order : Method "PUT"
+2. URL: http://localhost:9092/Orders/updateOrder/id/4
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+    "bookingId" : 4,
+	"orderDate" : "2022-05-10",
+	"transactionMode" : "UPI",
+	"quantity" : 40,
+	"price" : 800.00,
+    "planterId" :1
+	}
+	
+------------------------------------DELETE----------------------------------------------
+1. Delete Order : Method "DELETE"
+2. URL:	http://localhost:9092/Orders/deleteOrder/id/1002
+

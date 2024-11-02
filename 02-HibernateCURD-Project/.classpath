@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/1hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/2dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/3commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/4commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/5mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/cglib-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/All-Jars/01Hibernate-Student-jar/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

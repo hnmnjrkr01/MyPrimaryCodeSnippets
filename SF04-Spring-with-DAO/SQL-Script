@@ -1,0 +1,16 @@
+
+ ORACLE TABLE :
+
+
+SQL>create table account(acc_no number(6),acc_name varchar(20),acc_type varchar(20),
+ bal number(6),primary key(acc_no));
+
+ 
+ 
+ mysql> use test;
+mysql>
+
+create table account(Acc_no int,Acc_name char(20),Acc_type char(20),
+                                        bal int, primary key(acc_no));
+
+ 

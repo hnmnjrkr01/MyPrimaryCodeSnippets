@@ -1,0 +1,59 @@
+MySQL
+Db Records :
+ create database mydb;
+ use mydb;
+ 
+ insert into employee values(10,'ram',55000);
+ insert into employee values(20,'Ramesh',65000);
+ insert into employee values(30,'Kumar',95000);
+commit;
+
+Get :
+http://localhost:9999/employee/getAll
+[
+    {
+        "empId": 10,
+        "empName": "ram",
+        "empSal": 55000
+    },
+    {
+        "empId": 20,
+        "empName": "raj",
+        "empSal": 65000
+    }
+]
+
+Post : Add records 
+http://localhost:9999/employee/create
+{
+       
+        "empName": "Bhanu",
+        "empSal": 75000
+    }
+
+  Search ID :
+  GET
+  http://localhost:9999/employee/getdetails/1
+   {
+    "empId": 1,
+    "empName": "Bhanu",
+    "empSal": 75000
+}
+
+Put : Update Record 
+http://localhost:9999/employee/update
+Select Body : and raw
+{
+    "empId": 1,
+    "empName": "raviram",
+    "empSal": 78000
+}
+
+Delete : delete
+http://localhost:9999/employee/delete/1
+Select Body : and raw
+{
+    "empId": 1,
+    "empName": "raviram",
+    "empSal": 78000
+}

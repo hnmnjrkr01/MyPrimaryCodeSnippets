@@ -1,0 +1,50 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+ 
+<bean id="dataSourceRam"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://localhost:3306/mydb</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>root</value>
+		</property>
+	</bean>
+	
+	
+	 <bean id="accountDao" class="AccountDaoImpl"  >
+		 <property name="dataSource">
+			<ref bean="dataSourceRam" />
+		</property> 
+	</bean>  	
+	
+	
+	
+	
+	
+	
+	
+	<!-- 
+	
+	<bean id="accountDao" class="AccountDaoImpl" autowire="byType"  >
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>  -->
+	
+	
+	<!-- If bean property names and <bean> element 'id' attribute values are same, then we can use autowire attribute-->
+	<!-- autowire attribute reduces configuration. --><!--
+	
+<bean id="accountDao" class="AccountDaoImpl" autowire="byType"/>
+
+-->
+
+
+</beans>

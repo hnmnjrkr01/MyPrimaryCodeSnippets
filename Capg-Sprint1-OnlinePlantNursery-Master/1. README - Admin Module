@@ -1,0 +1,25 @@
+------------------------------------POST----------------------------------------------
+1. Add User : Method "POST"
+2. URL: http://localhost:9092/loginController/addUser
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+   "adminId" : 101,
+   "adminUsername" : "ram",
+   "adminPassword" : "ram@123"
+	}
+	
+------------------------------------GET----------------------------------------------
+1. Get User : Method "GET"
+2. URL:	http://localhost:9092/loginController/viewAllUsers
+
+------------------------------------DELETE----------------------------------------------
+1. Delete User : Method "DELETE"
+2. URL: http://localhost:9092/loginController/removeUser
+3. INPUT: 
+   Body -> Raw -> JSON  
+	{
+   "adminId" : 106,
+   "adminUsername" : "Nikhil",
+   "adminPassword" : "Nikhil@123"
+	}

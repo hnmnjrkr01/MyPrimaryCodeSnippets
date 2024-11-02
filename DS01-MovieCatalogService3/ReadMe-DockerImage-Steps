@@ -1,0 +1,82 @@
+http://localhost:9093/cato/list
+
+
+------- pom.xml file .. packaging as jar to be added	
+	<groupId>com.example</groupId>
+	<packaging>jar</packaging>   // to be added for docker
+	<artifactId>accounts</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>accounts</name>
+	
+	<properties>
+		<java.version>1.8</java.version>  // change the java version 1.8/11
+	</properties>
+	
+-----------------------------------------------------
+
+Running the application from jar file.
+
+1. go to location 
+
+	1.1   C:\DS01-MovieCatalogService2> and make target folder empty
+	1.2   C:\DS01-MovieCatalogService2>mvn clean install
+	
+	Check the build success and target folder - related jar is created
+
+
+2. Run the application with mvn spring boot
+
+
+C:\DS01-MovieCatalogService2>mvn spring-boot:run
+ 
+ After springBoot server start
+ Test application running on Postman                                
+ Get :
+  http://localhost:9093/cato/list
+      
+          {   "movieId": 1001,
+             "movieName": "RRR"
+          }
+          
+
+          
+	 
+#3. create the Dockerfile under accounts folder
+	C:\DS01-MovieCatalogService2>  - add Dockerfile without extension.
+	
+5. check the existing docker images first - docker images
+
+6. create the docker image for account with below command
+                 goto DocuerHub =>  https://hub.docker.com
+                 : create account then you will get dvinat0230
+                 
+      c:\DS01-MovieCatalogService2>docker images
+                 
+
+	C:\DS01-MovieCatalogService2>docker build . -t dvinat0230/movieservice2
+
+7. check the image created - docker images
+
+8. Check any docker containers running - docker ps
+
+9. create container for the image created above
+	C:\DS01-MovieCatalogService2>docker run -p 9093:9093 dvinat0230/movieservice2
+	
+10. Check the application from postman
+ 
+http://localhost:9093/cato/list
+  127.0.0.1
+	
+	
+	http://127.0.0.1:9093/cato/list
+	
+	
+	
+11. Pushing docker image to docker hub
+
+	1. Goto DockerHub.com and create account
+	2. commande - docker push docker.io/<docker-account>/<image-name>
+	
+		Ex: C:\DS01-MovieCatalogService2>docker push docker.io/dvinat0230/movieservice2
+
+

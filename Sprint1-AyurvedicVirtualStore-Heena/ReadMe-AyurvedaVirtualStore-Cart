@@ -1,0 +1,54 @@
+
+
+
+POST
+
+http://localhost:8080/ayurvedaStore/addCart
+
+body-->raw
+
+{
+     "cartId": 1,
+	 "cost":50.55,
+     "quantity":2
+}
+{
+     "cartId": 2,
+	 "cost":59.89,
+     "quantity":5
+}
+{
+     "cartId": 3,
+	 "cost":35.00,
+     "quantity":6
+}
+{
+     "cartId": 4,
+	 "cost":50.98,
+     "quantity":2
+}
+{
+     "cartId": 5,
+	 "cost":65.89,
+     "quantity":3
+}
+{
+     "cartId": 6,
+	 "cost":51.23,
+     "quantity":10
+}
+{
+     "cartId": 7
+	 "cost":87.56,
+     "quantity":111
+}
+
+
+
+
+
+
+
+
+GET
+http://localhost:8080/ayurvedaStore/showAll

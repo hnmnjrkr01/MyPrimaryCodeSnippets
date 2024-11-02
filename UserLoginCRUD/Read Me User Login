@@ -1,0 +1,48 @@
+
+
+-----------------POST MAPPING-------------------
+
+http://localhost:8080/UserCRUDLogin/addUser
+
+RAW->BODY->JSON
+
+{
+"username":"hn.mnjrkr",
+"name":"Heena",
+"email": "hn.mnjrkr01@gmail.com"
+}
+
+--------------------GET MAPPING---------------------
+
+http://localhost:8080/UserCRUDLogin/showAllUsers
+
+-------------------GET MAPPING BY ID--------------------
+
+http://localhost:8080/UserCRUDLogin/showUser/5
+
+
+-----------------PUT MAPPING---------------------------
+
+http://localhost:8080/UserCRUDLogin/updateUser/4
+
+RAW->BODY->JSON
+
+{
+"username":"hn.mnjrkr",
+"name":"Heena",
+"email": "hn.mnjrkr01@gmail.com"
+}
+
+
+------------------DELETE MAPPING------------------------
+
+http://localhost:8080/UserCRUDLogin/removerUser/5
+
+
+
+
+
+
+
+
+

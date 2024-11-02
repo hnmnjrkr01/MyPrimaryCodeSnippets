@@ -1,0 +1,16 @@
+
+GET
+http://localhost:8080/login.spring
+
+Get
+http://localhost:8080/javatopics
+
+Post :  Body ->raw -> JSON 
+ 
+http://localhost:8080/addtopic
+
+{
+        "name": "RDBMS",
+        "description": "MYSQL",
+        "id": "KINI"
+    }

@@ -1,0 +1,11 @@
+
+
+
+http://localhost:9091/addbook
+
+  {
+   "bookId": "100",
+   "booTittle": "CoreJava",
+   "author" : "Oracle Crop",
+   "price": "450"
+   }

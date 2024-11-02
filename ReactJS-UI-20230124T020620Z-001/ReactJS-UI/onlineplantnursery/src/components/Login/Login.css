@@ -1,0 +1,150 @@
+.main-Login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  background-image: url("bgimg.jpg");
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.main-Login .login-contain {
+  height: 75vh;
+  width: 70%;
+  background: -webkit-gradient(linear, left top, right bottom, from(white), to(rgba(19, 18, 18, 0.3)));
+  background: linear-gradient(to right bottom, white, rgba(19, 18, 18, 0.3));
+  border-radius: 1rem;
+  margin: 2rem auto;
+  -webkit-box-shadow: 0.5rem 0.5rem 2rem -1rem #3a3939;
+          box-shadow: 0.5rem 0.5rem 2rem -1rem #3a3939;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-Login .login-contain .link1 {
+  text-decoration: none;
+  color: #013615;
+}
+
+.main-Login .login-contain .left,
+.main-Login .login-contain .right {
+  margin: 2rem 2rem;
+  -webkit-box-sizing: 0.5rem 0.5rem 2rem -1rem #3a3939;
+          box-sizing: 0.5rem 0.5rem 2rem -1rem #3a3939;
+  height: 80%;
+  width: 100%;
+}
+
+.main-Login .login-contain .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-Login .login-contain .left input {
+  display: block;
+  border: none;
+  height: 2rem;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  padding: 0.2rem 1rem;
+  color: #080808;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-Login .login-contain .left input:focus {
+  outline: none;
+  border: none;
+}
+
+.main-Login .login-contain .left input:hover {
+  outline: 0.5px solid #188f05;
+  -webkit-box-shadow: 4px 3px 9px -1px #188f05;
+          box-shadow: 4px 3px 9px -1px #188f05;
+}
+
+.main-Login .login-contain .left label {
+  display: block;
+  text-align: left;
+  width: 78%;
+  margin: auto;
+  font-size: small;
+  color: #080808;
+  margin-bottom: 0.5rem;
+}
+
+.main-Login .login-contain .left #sub_btn {
+  width: 80%;
+  background: #188f05;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+
+.main-Login .login-contain .left #sub_btn:hover {
+  -webkit-box-shadow: 0.5px 0.5px 6px -1px #423b3b;
+          box-shadow: 0.5px 0.5px 6px -1px #423b3b;
+}
+
+.main-Login .login-contain .right .welcomenote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-Login .login-contain .right .welcomenote h3 {
+  margin-left: 1rem;
+  color: black;
+  float: left;
+  margin-bottom: 2.5rem;
+}
+
+.main-Login .login-contain .right .welcomeimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+  width: 70%;
+  margin: 0rem auto;
+}
+
+.main-Login .login-contain .right .welcomeimg #wel-img-id {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=Login.css.map */

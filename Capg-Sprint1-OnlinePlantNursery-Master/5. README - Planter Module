@@ -1,0 +1,48 @@
+------------------------------------POST----------------------------------------------
+1. Add Planter : Method "POST"
+2. URL: http://localhost:9092/planter/addPlanter
+3. INPUT: 
+   {
+    "name" : "Guava",
+    "bloomTime": "Winter",
+    "watering": "Yes",
+    "difficultyLevel": "Low",
+    "temprature": "Low",
+    "typeOfSeed": "Fruit",
+    "seedsDescription": "Guava seed",
+    "seedsStock": 100,
+    "seedsCost": 50.00,
+    "seedsPerPacket" : 20
+	}
+	
+------------------------------------GET----------------------------------------------
+1. Get Planter By Id : Method "GET"
+2. URL: http://localhost:9092/planter/getPlanter/id/1002
+
+1. Get All Planters : Method "GET"
+2. URL: http://localhost:9092/planter/getAllPlanters
+
+1. Get Planter By Mincost and Maxcost : Method "GET"
+2. URL: http://localhost:9092/planter/planters/4000.00/5000.00
+
+------------------------------------UPDATE----------------------------------------------
+
+1. Update Planter : Method "PUT"
+2. URL: http://localhost:9092/planter/updatePlanter
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+    "planterId": 1002,
+    "planterheight": 50.0,
+    "planterCapacity": 50,
+    "drainageHoles": 4,
+    "planterColor": "Red",
+    "planterShape": "Circle",
+    "planterStock": 80,
+    "planterCost": 4500
+	}
+	
+------------------------------------DELETE----------------------------------------------
+1. Delete Planter By Id : Method "DELETE"
+2. URL:	http://localhost:9092/planter/deletePlanter/id/1002
+

@@ -1,0 +1,17 @@
+
+
+----------------------POST MAPPING----------------------
+
+body->raw->JSON
+
+http://localhost:8080/Student-Managment/addStudent
+
+{
+"id":1,
+"name":"Heena Majrekar",
+"address":"25-B, T-Ward,Sainik-Colony,Bairagarh"
+}
+
+---------------------GET MAPPING------------------------
+
+http://localhost:8080/Student-Managment/showAllStudents

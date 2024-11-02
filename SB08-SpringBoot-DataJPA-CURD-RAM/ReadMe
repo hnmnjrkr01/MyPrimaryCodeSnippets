@@ -1,0 +1,41 @@
+While create project on SpringBoot Starter : select
+   a. Spring Web
+   b. SpringData JPA
+   c. MySQL Driver
+   
+   
+   Post:
+      http://localhost:9091//addbook
+        
+      {  
+    "bookid": "100",  
+    "bookname": "CoreJava",  
+    "author": "UST-Students",  
+    "price": "450"  
+   }  
+   
+   Get All records
+   // 
+   http://localhost:9091/allbookss
+         
+   findBy Book
+      get:
+   http://localhost:9091/bookid/300
+     
+   Update : 
+  Postman : put
+  
+ http://localhost:9091/updatebook
+  
+  {  
+    "bookid": "200",  
+    "bookname": "SpringBoot",  
+    "author": "UST-Students",  
+    "price": "650"  
+}  
+    //Delete Record  
+  delete
+  http://localhost:9091/bookid/100
+  
+  
+   

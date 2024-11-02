@@ -1,0 +1,37 @@
+
+
+POST
+
+http://localhost:8080/ayurvedaStore/addCategory
+
+body-->raw
+
+{
+ "categoryId":1,
+ "categoryName":"Immunity Booster"
+}
+
+{
+ "categoryId":2,
+ "categoryName":"Fever Reducer"
+}
+{
+ "categoryId":3,
+ "categoryName":"Anti Depresent"
+}
+{
+ "categoryId":4,
+ "categoryName":"Vitamins"
+}
+{
+ "categoryId":5,
+ "categoryName":"Blood Sugar Reducer"
+}
+{
+ "categoryId":6,
+ "categoryName":"Laxative"
+}
+
+
+GET
+http://localhost:8080/ayurvedaStore/showAllCategory

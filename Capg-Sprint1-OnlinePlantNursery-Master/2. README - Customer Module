@@ -1,0 +1,39 @@
+------------------------------------POST----------------------------------------------
+1. Add Customer : Method "POST"
+2. URL: http://localhost:9092/customers/addCustomer
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+    "customerId" : 1,
+    "customerName" : "ramesh",
+    "customerEmail" : "ramesh@gmail.com",
+    "username" : "ramesh",
+    "password" : "ramesh"
+	}
+	
+------------------------------------GET----------------------------------------------
+1. Get Customer By Id : Method "GET"
+2. URL: http://localhost:9092/customers/viewCustomer/id/4
+
+1. Get All Customers : Method "GET"
+2. URL: http://localhost:9092/customers/viewAllCustomers
+
+------------------------------------UPDATE----------------------------------------------
+
+1. Update Customer : Method "PUT"
+2. URL: http://localhost:9092/customers/updateCustomer/id/4
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+    "customerId": 4,
+    "customerName": "Smita Pradhan",
+    "customerEmail": "smita123pradhan@gmail.com",
+    "username": "smita",
+    "password": "smita123",
+    "address": null
+	}
+	
+------------------------------------DELETE----------------------------------------------
+1. Delete Customer : Method "DELETE"
+2. URL:	http://localhost:9092/customers/deleteCustomer/id/12
+

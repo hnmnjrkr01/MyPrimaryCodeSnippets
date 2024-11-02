@@ -1,0 +1,110 @@
+$main-color: rgb(24, 143, 5);
+
+.main-Login {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  background-image: url("bgimg.jpg");
+  max-height: fit-content;
+  max-width: fit-content;
+
+  .login-contain {
+    height: 75vh;
+    width: 70%;
+    background: linear-gradient(
+      to right bottom,
+      rgb(255, 255, 255),
+      rgba(19, 18, 18, 0.3)
+    );
+    border-radius: 1rem;
+    margin: 2rem auto;
+    box-shadow: 0.5rem 0.5rem 2rem -1rem rgb(58, 57, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .link1{
+      text-decoration: none;
+      color: rgb(1, 54, 21);
+    }
+    .left,
+    .right {
+      margin: 2rem 2rem;
+      box-sizing: 0.5rem 0.5rem 2rem -1rem rgb(58, 57, 57);
+      height: 80%;
+      width: 100%;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      input {
+        display: block;
+        border: none;
+        height: 2rem;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        padding: 0.2rem 1rem;
+        color: rgb(8, 8, 8);
+        transition: all 0.3s ease-in-out;
+        &:focus {
+          outline: none;
+          border: none;
+        }
+        &:hover{
+            outline: 0.5px solid $main-color;
+            box-shadow: 4px 3px 9px -1px $main-color;
+        }
+      }
+      label {
+        display: block;
+        text-align: left;
+        width: 78%;
+        margin: auto;
+        font-size: small;
+        color: rgb(8, 8, 8);
+        margin-bottom: 0.5rem;
+        
+      }
+      #sub_btn{
+          width: 80%;
+          background: $main-color;
+          color: whitesmoke;
+          border: none;
+          cursor: pointer;
+          padding: 0.5rem 1rem;
+          transition: all 0.3 ease;
+          &:hover{
+              box-shadow: 0.5px 0.5px 6px -1px rgb(66, 59, 59);
+              
+          }
+      }
+    }
+    .right{
+      .welcomenote{
+        display: flex;
+        justify-content: center;
+        h3{
+          margin-left: 1rem;
+          color: black;
+          float: left;
+          margin-bottom: 2.5rem;
+          
+        }
+      }
+      .welcomeimg{
+        display:flex;
+        justify-content: center;
+        height: 70%;
+        width: 70%;
+        margin: 0rem auto;
+        #wel-img-id{
+          width: 80%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
